@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-11T20:18:13.986Z",
+  "updated_at": "2026-06-11T21:53:03.353Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 0
+    "live_overlay": 1
   },
   "matches": [
     {
@@ -23,9 +23,9 @@
       "team2": "South Africa",
       "venue": "Mexico City",
       "city": "Mexico City",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 0
     },
     {
       "id": "m002",
@@ -1857,25 +1857,14 @@
     "A": [
       {
         "team": "Mexico",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 2,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "South Africa",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 2,
+        "Pts": 3
       },
       {
         "team": "South Korea",
@@ -1897,6 +1886,17 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "team": "South Africa",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 0,
+        "GA": 2,
+        "GD": -2,
         "Pts": 0
       }
     ],

@@ -5,8 +5,11 @@
  * Fontes:
  *   1. openfootball/worldcup.json (domínio público) — calendário/fixtures base
  *      (grupos, datas, horários, estádios, chaveamento).
- *   2. football-data.org (free tier, opcional) — placar AO VIVO / resultados,
- *      mesclado por (data + seleções). Ativa só se FOOTBALL_DATA_TOKEN existir.
+ *   2. ESPN site.api (sem auth, público) — placar AO VIVO / resultados, fonte
+ *      PRIMÁRIA. Mesclado por (data + home + away).
+ *   3. football-data.org (opcional) — fallback do live overlay; o free tier
+ *      NÃO inclui Copa do Mundo (a request volta vazia / 403), então só ajuda
+ *      se houver token de plano pago. Ativa só se FOOTBALL_DATA_TOKEN existir.
  *
  * É o ÚNICO mecanismo de atualização: a GitHub Action roda isto num cron, e se
  * houver diff, commita data/ e re-deploya o Worker. O Worker serve o JSON
@@ -25,9 +28,29 @@ const OUT = join(__dirname, "..", "data", "tournament.json");
 
 const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
-// football-data.org: competição "WC" (FIFA World Cup). Free tier.
+// football-data.org: competição "WC" (FIFA World Cup). Free tier NÃO cobre.
 const FOOTBALL_DATA_URL =
   "https://api.football-data.org/v4/competitions/WC/matches";
+// ESPN unofficial: público, sem auth, cobre Copa do Mundo (slug fifa.world).
+// Janela 2026-06-01..2026-07-20 cobre os 39 dias do torneio.
+const ESPN_URL =
+  "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260601-20260720";
+
+// Aliases de nome de seleção entre ESPN e openfootball (slug-aware).
+const ESPN_NAME_ALIASES = {
+  czechia: "czech-republic",
+  "ivory-coast": "cote-d-ivoire",
+  "cote-divoire": "cote-d-ivoire",
+  "republic-of-ireland": "ireland",
+  "korea-republic": "south-korea",
+  "korea-dpr": "north-korea",
+  iran: "ir-iran",
+};
+
+function aliasSlug(s) {
+  const k = slug(s);
+  return ESPN_NAME_ALIASES[k] || k;
+}
 
 const STAGE_MAP = [
   [/matchday|group/i, "group"],
@@ -116,9 +139,52 @@ async function main() {
     };
   });
 
-  // Overlay placar ao vivo (football-data.org), best-effort.
-  const token = process.env.FOOTBALL_DATA_TOKEN;
+  // Overlay placar ao vivo — ESPN unofficial (sem auth) é a fonte primária.
+  // openfootball depende de commit humano (atrasa); football-data WC é pago.
   let liveCount = 0;
+  try {
+    const espn = await fetchJson(ESPN_URL);
+    const byKey = new Map();
+    for (const ev of espn.events || []) {
+      const comp = ev.competitions?.[0];
+      if (!comp) continue;
+      const date = (comp.date || ev.date || "").slice(0, 10);
+      const home = comp.competitors?.find((c) => c.homeAway === "home")?.team;
+      const away = comp.competitors?.find((c) => c.homeAway === "away")?.team;
+      if (!date || !home || !away) continue;
+      const k = `${date}|${aliasSlug(home.displayName)}|${aliasSlug(away.displayName)}`;
+      byKey.set(k, { ev, comp, home, away });
+    }
+    for (const m of matches) {
+      // openfootball list team1 = home, team2 = away (verificado com m001).
+      const k = `${m.date}|${aliasSlug(m.team1)}|${aliasSlug(m.team2)}`;
+      const hit = byKey.get(k);
+      if (!hit) continue;
+      const status = hit.ev.status?.type;
+      const homeScore = hit.comp.competitors.find((c) => c.homeAway === "home")?.score;
+      const awayScore = hit.comp.competitors.find((c) => c.homeAway === "away")?.score;
+      const s1 = homeScore != null ? Number(homeScore) : null;
+      const s2 = awayScore != null ? Number(awayScore) : null;
+      if (status?.completed) {
+        m.status = "finished";
+        if (s1 != null) m.score1 = s1;
+        if (s2 != null) m.score2 = s2;
+        liveCount++;
+      } else if (status?.state === "in" || /HALF|EXTRA|PENALTY|INTERVAL|END_OF_REGULATION/i.test(status?.name || "")) {
+        m.status = "live";
+        m.score1 = s1 ?? 0;
+        m.score2 = s2 ?? 0;
+        m.minute = hit.ev.status?.displayClock || null;
+        liveCount++;
+      }
+    }
+  } catch (e) {
+    console.warn("[refresh] ESPN overlay skipped:", e.message);
+  }
+
+  // Overlay legado (football-data.org) — só se houver token; o free tier não
+  // cobre Copa do Mundo, então normalmente é no-op. Mantido como fallback.
+  const token = process.env.FOOTBALL_DATA_TOKEN;
   if (token) {
     try {
       const live = await fetchJson(FOOTBALL_DATA_URL, {
@@ -152,8 +218,6 @@ async function main() {
     } catch (e) {
       console.warn("[refresh] live overlay skipped:", e.message);
     }
-  } else {
-    console.warn("[refresh] FOOTBALL_DATA_TOKEN ausente — sem overlay ao vivo.");
   }
 
   // Derivar grupos.
