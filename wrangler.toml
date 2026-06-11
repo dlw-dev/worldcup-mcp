@@ -1,0 +1,12 @@
+name = "mcp-worldcup"
+main = "src/index.js"
+compatibility_date = "2025-07-01"
+
+# Dados bundlados via import JSON (data/tournament.json), parseado pelo esbuild
+# por padrão — auto-atualizados por git/cron (.github/workflows/refresh.yml).
+# Sem KV/D1/secrets no Worker: é informação pública e read-only.
+#
+# Deploy publica em https://mcp-worldcup.<conta>.workers.dev
+# (a mcp.ai aponta o adapter worldcup pra esse host; override via
+#  MCP_WORKER_URL_WORLDCUP no .env do server se usar custom domain).
+workers_dev = true

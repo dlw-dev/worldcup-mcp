@@ -1,0 +1,60 @@
+name: refresh-data
+
+# "Git automático": busca os dados (openfootball + placar ao vivo), e se houver
+# diff, commita data/ e re-deploya o Worker. Durante a Copa, roda a cada 10 min;
+# fora de janela de jogo dá pra espaçar. Também acionável na mão.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths: ["src/**", "wrangler.toml", "package.json"]
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh data (openfootball + live score overlay)
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: node scripts/refresh-data.mjs
+
+      - name: Commit if changed
+        id: commit
+        run: |
+          git config user.name "worldcup-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sem mudanças nos dados."
+          else
+            git add data/
+            git commit -m "chore(data): refresh fixtures/scores [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Deploya o Worker quando os dados mudaram OU quando o código mudou (push).
+      - name: Install deps
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
+        run: npm install
+
+      - name: Deploy Worker
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy

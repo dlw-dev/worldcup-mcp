@@ -1,0 +1,16 @@
+{
+  "name": "worldcup-mcp",
+  "version": "0.1.0",
+  "description": "FIFA World Cup 2026 MCP server (schedules & results) on Cloudflare Workers, with git auto-updating data.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node scripts/refresh-data.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  },
+  "license": "MIT"
+}
