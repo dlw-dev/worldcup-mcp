@@ -1,8 +1,11 @@
 name: refresh-data
 
-# "Git automático": busca os dados (openfootball + placar ao vivo), e se houver
-# diff, commita data/ e re-deploya o Worker. Durante a Copa, roda a cada 10 min;
-# fora de janela de jogo dá pra espaçar. Também acionável na mão.
+# "Git automático": busca os dados (openfootball + placar ao vivo) e, se houver
+# diff, commita data/. O Worker LÊ o data/tournament.json commitado direto do
+# raw GitHub a cada request (cache 5min), então o commit JÁ atualiza o que está
+# no ar, SEM redeploy. O deploy do Worker só é necessário quando o CÓDIGO muda
+# (push em src/), e usa CLOUDFLARE_API_TOKEN (opcional; sem ele, só o commit
+# roda e os dados ainda atualizam pelo raw).
 on:
   schedule:
     - cron: "*/10 * * * *"
@@ -47,13 +50,16 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      # Deploya o Worker quando os dados mudaram OU quando o código mudou (push).
+      # Deploy do Worker SÓ quando o código muda (push em src/). Dados não
+      # precisam de deploy (o Worker lê o raw do git). continue-on-error pra não
+      # falhar a run quando CLOUDFLARE_API_TOKEN ainda não estiver configurado.
       - name: Install deps
-        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
+        if: github.event_name == 'push'
         run: npm install
 
       - name: Deploy Worker
-        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
+        if: github.event_name == 'push'
+        continue-on-error: true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

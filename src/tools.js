@@ -4,7 +4,35 @@
  * da mcp.ai chama (matches, schedule, results, groups, standings, bracket,
  * teams, venues).
  */
-import TOURNAMENT from "../data/tournament.json";
+import BUNDLED from "../data/tournament.json";
+
+// Lê o JSON commitado direto do git (raw GitHub) a cada request, com cache de
+// 5 min em memória + fallback pro snapshot bundlado. É isso que dá o
+// "atualização do git automática": a GitHub Action commita data/tournament.json
+// e o Worker passa a servir o novo em <=5min, SEM redeploy.
+const RAW_URL =
+  "https://raw.githubusercontent.com/dlw-dev/worldcup-mcp/main/data/tournament.json";
+const TTL_MS = 5 * 60 * 1000;
+let _cache = { data: BUNDLED, at: 0 };
+
+async function getTournament() {
+  const now = Date.now();
+  if (_cache.at && now - _cache.at < TTL_MS) return _cache.data;
+  try {
+    const r = await fetch(RAW_URL, { cf: { cacheTtl: 300, cacheEverything: true } });
+    if (r.ok) {
+      const data = await r.json();
+      if (data && Array.isArray(data.matches)) {
+        _cache = { data, at: now };
+        return data;
+      }
+    }
+  } catch {
+    // rede falhou — segue com o cache/bundlado
+  }
+  _cache.at = now; // evita martelar o raw a cada request em caso de falha
+  return _cache.data;
+}
 
 // Aliases PT/ES → nome no dataset (inglês do openfootball).
 const TEAM_ALIASES = {
@@ -71,8 +99,8 @@ function todayUtc() {
   return new Date().toISOString().slice(0, 10);
 }
 
-function filterMatches({ date, team, group, stage, status }) {
-  return TOURNAMENT.matches.filter((m) => {
+function filterMatches(T, { date, team, group, stage, status }) {
+  return T.matches.filter((m) => {
     if (date && m.date !== date) return false;
     if (group && m.group !== String(group).toUpperCase()) return false;
     if (stage && m.stage !== stage) return false;
@@ -83,16 +111,17 @@ function filterMatches({ date, team, group, stage, status }) {
   });
 }
 
-const meta = () => ({
-  tournament: TOURNAMENT.name,
-  updated_at: TOURNAMENT.updated_at,
-  source: TOURNAMENT.source,
+const meta = (T) => ({
+  tournament: T.name,
+  updated_at: T.updated_at,
+  source: T.source,
 });
 
 export const TOOLS = {
-  matches(args = {}) {
+  async matches(args = {}) {
+    const T = await getTournament();
     const { date, team, group, stage, status, timezone } = args;
-    let list = filterMatches({ date, team, group, stage, status });
+    let list = filterMatches(T, { date, team, group, stage, status });
     let note;
     // Sem nenhum filtro → jogos de hoje; se não houver, o próximo dia com jogos.
     if (!date && !team && !group && !stage && !status) {
@@ -113,31 +142,33 @@ export const TOOLS = {
       }
     }
     return {
-      ...meta(),
+      ...meta(T),
       note,
       count: list.length,
       matches: list.map((m) => withLocal(m, timezone)),
     };
   },
 
-  schedule(args = {}) {
+  async schedule(args = {}) {
+    const T = await getTournament();
     const { date, stage, timezone } = args;
-    const list = filterMatches({ date, stage });
+    const list = filterMatches(T, { date, stage });
     const byDate = {};
     for (const m of list) (byDate[m.date] ||= []).push(withLocal(m, timezone));
     return {
-      ...meta(),
+      ...meta(T),
       days: Object.keys(byDate)
         .sort()
         .map((d) => ({ date: d, matches: byDate[d] })),
     };
   },
 
-  results(args = {}) {
+  async results(args = {}) {
+    const T = await getTournament();
     const { date, team, group } = args;
-    const list = filterMatches({ date, team, group, status: "finished" });
+    const list = filterMatches(T, { date, team, group, status: "finished" });
     return {
-      ...meta(),
+      ...meta(T),
       count: list.length,
       results: list.map((m) => ({
         id: m.id,
@@ -153,41 +184,44 @@ export const TOOLS = {
     };
   },
 
-  groups(args = {}) {
+  async groups(args = {}) {
+    const T = await getTournament();
     const { group } = args;
-    const all = TOURNAMENT.groups;
+    const all = T.groups;
     if (group) {
       const g = String(group).toUpperCase();
-      return { ...meta(), group: g, teams: all[g] || [] };
+      return { ...meta(T), group: g, teams: all[g] || [] };
     }
     return {
-      ...meta(),
+      ...meta(T),
       groups: Object.keys(all)
         .sort()
         .map((g) => ({ group: g, teams: all[g] })),
     };
   },
 
-  standings(args = {}) {
+  async standings(args = {}) {
+    const T = await getTournament();
     const { group } = args;
-    const all = TOURNAMENT.standings;
+    const all = T.standings;
     if (group) {
       const g = String(group).toUpperCase();
-      return { ...meta(), group: g, table: all[g] || [] };
+      return { ...meta(T), group: g, table: all[g] || [] };
     }
     return {
-      ...meta(),
+      ...meta(T),
       standings: Object.keys(all)
         .sort()
         .map((g) => ({ group: g, table: all[g] })),
     };
   },
 
-  bracket(args = {}) {
+  async bracket(args = {}) {
+    const T = await getTournament();
     const { stage } = args;
     const stages = ["round32", "round16", "quarter", "semi", "third", "final"];
     const wanted = stage ? [stage] : stages;
-    const ko = TOURNAMENT.matches.filter(
+    const ko = T.matches.filter(
       (m) => m.stage !== "group" && wanted.includes(m.stage),
     );
     const byStage = {};
@@ -203,37 +237,39 @@ export const TOOLS = {
         venue: m.venue,
       });
     return {
-      ...meta(),
+      ...meta(T),
       bracket: stages
         .filter((s) => byStage[s])
         .map((s) => ({ stage: s, matches: byStage[s] })),
     };
   },
 
-  teams(args = {}) {
+  async teams(args = {}) {
+    const T = await getTournament();
     const { team, confederation } = args;
     if (team) {
-      const found = TOURNAMENT.teams.find((t) => teamMatches(t.name, team));
-      if (!found) return { ...meta(), error: `Seleção não encontrada: ${team}` };
-      const matches = TOURNAMENT.matches.filter(
+      const found = T.teams.find((t) => teamMatches(t.name, team));
+      if (!found) return { ...meta(T), error: `Seleção não encontrada: ${team}` };
+      const matches = T.matches.filter(
         (m) => teamMatches(m.team1, found.name) || teamMatches(m.team2, found.name),
       );
-      return { ...meta(), team: found, matches };
+      return { ...meta(T), team: found, matches };
     }
-    let list = TOURNAMENT.teams;
+    let list = T.teams;
     if (confederation) {
       const c = norm(confederation);
       list = list.filter((t) => norm(t.confederation || "").includes(c));
     }
-    return { ...meta(), count: list.length, teams: list };
+    return { ...meta(T), count: list.length, teams: list };
   },
 
-  venues(args = {}) {
+  async venues(args = {}) {
+    const T = await getTournament();
     const { city, venue } = args;
-    let list = TOURNAMENT.venues;
+    let list = T.venues;
     if (city) list = list.filter((v) => norm(v.city).includes(norm(city)));
     if (venue) list = list.filter((v) => norm(v.venue).includes(norm(venue)));
-    return { ...meta(), count: list.length, venues: list };
+    return { ...meta(T), count: list.length, venues: list };
   },
 };
 

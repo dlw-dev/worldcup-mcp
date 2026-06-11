@@ -77,7 +77,7 @@ async function handleRpc(body) {
       const fn = TOOLS[name];
       if (!fn) return rpcError(id, -32601, `Unknown tool: ${name}`);
       try {
-        const result = fn(params?.arguments || {});
+        const result = await fn(params?.arguments || {});
         return rpcResult(id, {
           content: [{ type: "text", text: JSON.stringify(result) }],
         });
