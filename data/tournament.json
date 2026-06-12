@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-12T20:07:08.816Z",
+  "updated_at": "2026-06-12T21:59:47.447Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -125,10 +125,9 @@
       "team2": "Bosnia & Herzegovina",
       "venue": "Toronto",
       "city": "Toronto",
-      "status": "live",
-      "score1": 0,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 1,
+      "score2": 1
     },
     {
       "id": "m008",
@@ -1904,25 +1903,25 @@
     "B": [
       {
         "team": "Canada",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Bosnia & Herzegovina",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Qatar",
