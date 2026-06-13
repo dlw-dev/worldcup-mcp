@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-13T01:37:53.604Z",
+  "updated_at": "2026-06-13T06:01:53.707Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -329,9 +329,9 @@
       "team2": "Paraguay",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 4,
+      "score2": 1
     },
     {
       "id": "m020",
@@ -1995,25 +1995,14 @@
     "D": [
       {
         "team": "USA",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "Paraguay",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 4,
+        "GA": 1,
+        "GD": 3,
+        "Pts": 3
       },
       {
         "team": "Australia",
@@ -2035,6 +2024,17 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "team": "Paraguay",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 4,
+        "GD": -3,
         "Pts": 0
       }
     ],
