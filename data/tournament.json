@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-13T22:32:26.864Z",
+  "updated_at": "2026-06-13T23:43:59.553Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -228,7 +228,7 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
       "status": "live",
-      "score1": 0,
+      "score1": 1,
       "score2": 1,
       "minute": null
     },
