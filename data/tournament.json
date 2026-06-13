@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-13T18:05:38.827Z",
+  "updated_at": "2026-06-13T19:51:26.013Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 4
+    "live_overlay": 6
   },
   "matches": [
     {
@@ -142,9 +142,10 @@
       "team2": "Switzerland",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "city": "San Francisco Bay Area (Santa Clara)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 1,
+      "minute": null
     },
     {
       "id": "m009",
