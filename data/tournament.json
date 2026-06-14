@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-14T16:11:29.949Z",
+  "updated_at": "2026-06-14T17:51:39.737Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 8
+    "live_overlay": 10
   },
   "matches": [
     {
@@ -431,9 +431,10 @@
       "team2": "Curaçao",
       "venue": "Houston",
       "city": "Houston",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 2,
+      "score2": 1,
+      "minute": null
     },
     {
       "id": "m026",
