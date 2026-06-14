@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-13T23:43:59.553Z",
+  "updated_at": "2026-06-14T02:03:36.699Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -227,10 +227,9 @@
       "team2": "Morocco",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "live",
+      "status": "finished",
       "score1": 1,
-      "score2": 1,
-      "minute": null
+      "score2": 1
     },
     {
       "id": "m014",
@@ -1950,25 +1949,25 @@
     "C": [
       {
         "team": "Brazil",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Morocco",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 1,
+        "GA": 1,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Haiti",
