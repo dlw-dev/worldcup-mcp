@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-14T20:46:59.106Z",
+  "updated_at": "2026-06-14T21:59:37.051Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -534,8 +534,8 @@
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
       "status": "live",
-      "score1": 0,
-      "score2": 0,
+      "score1": 2,
+      "score2": 2,
       "minute": null
     },
     {
