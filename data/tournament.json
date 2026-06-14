@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-14T17:51:39.737Z",
+  "updated_at": "2026-06-14T19:22:55.982Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -431,10 +431,9 @@
       "team2": "Curaçao",
       "venue": "Houston",
       "city": "Houston",
-      "status": "live",
-      "score1": 2,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 7,
+      "score2": 1
     },
     {
       "id": "m026",
@@ -2042,25 +2041,14 @@
     "E": [
       {
         "team": "Germany",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "Curaçao",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 7,
+        "GA": 1,
+        "GD": 6,
+        "Pts": 3
       },
       {
         "team": "Ivory Coast",
@@ -2082,6 +2070,17 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "team": "Curaçao",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 7,
+        "GD": -6,
         "Pts": 0
       }
     ],
