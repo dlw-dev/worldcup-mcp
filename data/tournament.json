@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-15T21:19:37.290Z",
+  "updated_at": "2026-06-15T23:12:47.284Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 17
+    "live_overlay": 19
   },
   "matches": [
     {
@@ -754,9 +754,10 @@
       "team2": "Uruguay",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m045",
