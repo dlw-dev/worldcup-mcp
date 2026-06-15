@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-15T01:42:34.448Z",
+  "updated_at": "2026-06-15T07:02:38.904Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -550,9 +550,9 @@
       "team2": "Tunisia",
       "venue": "Monterrey (Guadalupe)",
       "city": "Monterrey (Guadalupe)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 5,
+      "score2": 1
     },
     {
       "id": "m033",
@@ -2086,6 +2086,17 @@
     ],
     "F": [
       {
+        "team": "Sweden",
+        "P": 1,
+        "W": 1,
+        "D": 0,
+        "L": 0,
+        "GF": 5,
+        "GA": 1,
+        "GD": 4,
+        "Pts": 3
+      },
+      {
         "team": "Netherlands",
         "P": 1,
         "W": 0,
@@ -2108,25 +2119,14 @@
         "Pts": 1
       },
       {
-        "team": "Sweden",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
         "team": "Tunisia",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 5,
+        "GD": -4,
         "Pts": 0
       }
     ],
