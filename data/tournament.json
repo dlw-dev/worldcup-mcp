@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-15T13:25:31.598Z",
+  "updated_at": "2026-06-15T18:07:33.431Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 14
+    "live_overlay": 15
   },
   "matches": [
     {
@@ -737,9 +737,9 @@
       "team2": "Cape Verde",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 0,
+      "score2": 0
     },
     {
       "id": "m044",
@@ -2179,25 +2179,25 @@
     "H": [
       {
         "team": "Spain",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 0,
         "GA": 0,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Cape Verde",
-        "P": 0,
+        "P": 1,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 0,
         "GF": 0,
         "GA": 0,
         "GD": 0,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Saudi Arabia",
