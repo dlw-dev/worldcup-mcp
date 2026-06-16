@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-15T23:12:47.284Z",
+  "updated_at": "2026-06-16T01:49:57.365Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -754,10 +754,9 @@
       "team2": "Uruguay",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "live",
+      "status": "finished",
       "score1": 1,
-      "score2": 0,
-      "minute": null
+      "score2": 1
     },
     {
       "id": "m045",
@@ -2179,6 +2178,28 @@
     ],
     "H": [
       {
+        "team": "Saudi Arabia",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
+        "team": "Uruguay",
+        "P": 1,
+        "W": 0,
+        "D": 1,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 1
+      },
+      {
         "team": "Spain",
         "P": 1,
         "W": 0,
@@ -2199,28 +2220,6 @@
         "GA": 0,
         "GD": 0,
         "Pts": 1
-      },
-      {
-        "team": "Saudi Arabia",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "Uruguay",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
       }
     ],
     "I": [
