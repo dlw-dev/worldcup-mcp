@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-16T20:29:01.765Z",
+  "updated_at": "2026-06-16T22:31:08.135Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 21
+    "live_overlay": 23
   },
   "matches": [
     {
@@ -839,10 +839,9 @@
       "team2": "Senegal",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "live",
-      "score1": 0,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 3,
+      "score2": 1
     },
     {
       "id": "m050",
@@ -857,9 +856,10 @@
       "team2": "Norway",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m051",
@@ -2226,25 +2226,14 @@
     "I": [
       {
         "team": "France",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "Senegal",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 3,
+        "GA": 1,
+        "GD": 2,
+        "Pts": 3
       },
       {
         "team": "Iraq",
@@ -2266,6 +2255,17 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "team": "Senegal",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 3,
+        "GD": -2,
         "Pts": 0
       }
     ],
