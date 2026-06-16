@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-16T17:31:14.989Z",
+  "updated_at": "2026-06-16T20:29:01.765Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 19
+    "live_overlay": 21
   },
   "matches": [
     {
@@ -839,9 +839,10 @@
       "team2": "Senegal",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m050",
