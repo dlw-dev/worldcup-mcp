@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-17T19:24:04.217Z",
+  "updated_at": "2026-06-17T21:28:30.304Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 23
+    "live_overlay": 25
   },
   "matches": [
     {
@@ -1145,9 +1145,10 @@
       "team2": "Croatia",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 3,
+      "score2": 2,
+      "minute": null
     },
     {
       "id": "m068",
