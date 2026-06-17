@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-17T21:28:30.304Z",
+  "updated_at": "2026-06-17T23:01:27.469Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1145,10 +1145,9 @@
       "team2": "Croatia",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "live",
-      "score1": 3,
-      "score2": 2,
-      "minute": null
+      "status": "finished",
+      "score1": 4,
+      "score2": 2
     },
     {
       "id": "m068",
@@ -2364,25 +2363,14 @@
     "L": [
       {
         "team": "England",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
-      },
-      {
-        "team": "Croatia",
-        "P": 0,
-        "W": 0,
-        "D": 0,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GF": 4,
+        "GA": 2,
+        "GD": 2,
+        "Pts": 3
       },
       {
         "team": "Ghana",
@@ -2404,6 +2392,17 @@
         "GF": 0,
         "GA": 0,
         "GD": 0,
+        "Pts": 0
+      },
+      {
+        "team": "Croatia",
+        "P": 1,
+        "W": 0,
+        "D": 0,
+        "L": 1,
+        "GF": 2,
+        "GA": 4,
+        "GD": -2,
         "Pts": 0
       }
     ]
