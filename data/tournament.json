@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-18T19:39:04.742Z",
+  "updated_at": "2026-06-18T21:37:51.683Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 29
+    "live_overlay": 30
   },
   "matches": [
     {
@@ -159,10 +159,9 @@
       "team2": "Bosnia & Herzegovina",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "live",
-      "score1": 0,
-      "score2": 0,
-      "minute": "39'"
+      "status": "finished",
+      "score1": 4,
+      "score2": 1
     },
     {
       "id": "m010",
@@ -1903,18 +1902,18 @@
     ],
     "B": [
       {
-        "team": "Canada",
-        "P": 1,
-        "W": 0,
+        "team": "Switzerland",
+        "P": 2,
+        "W": 1,
         "D": 1,
         "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
+        "GF": 5,
+        "GA": 2,
+        "GD": 3,
+        "Pts": 4
       },
       {
-        "team": "Bosnia & Herzegovina",
+        "team": "Canada",
         "P": 1,
         "W": 0,
         "D": 1,
@@ -1936,14 +1935,14 @@
         "Pts": 1
       },
       {
-        "team": "Switzerland",
-        "P": 1,
+        "team": "Bosnia & Herzegovina",
+        "P": 2,
         "W": 0,
         "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
+        "L": 1,
+        "GF": 2,
+        "GA": 5,
+        "GD": -3,
         "Pts": 1
       }
     ],
