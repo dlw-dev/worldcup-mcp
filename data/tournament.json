@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-18T14:09:08.195Z",
+  "updated_at": "2026-06-18T17:27:07.948Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 27
+    "live_overlay": 28
   },
   "matches": [
     {
@@ -57,9 +57,10 @@
       "team2": "South Africa",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 0,
+      "minute": "66'"
     },
     {
       "id": "m004",
