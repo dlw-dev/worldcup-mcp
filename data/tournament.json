@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-18T17:27:07.948Z",
+  "updated_at": "2026-06-18T19:39:04.742Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 28
+    "live_overlay": 29
   },
   "matches": [
     {
@@ -57,10 +57,9 @@
       "team2": "South Africa",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "live",
+      "status": "finished",
       "score1": 1,
-      "score2": 0,
-      "minute": "66'"
+      "score2": 1
     },
     {
       "id": "m004",
@@ -160,9 +159,10 @@
       "team2": "Bosnia & Herzegovina",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": "39'"
     },
     {
       "id": "m010",
@@ -1880,25 +1880,25 @@
       },
       {
         "team": "Czech Republic",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
-        "GF": 1,
-        "GA": 2,
+        "GF": 2,
+        "GA": 3,
         "GD": -1,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "South Africa",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
-        "GF": 0,
-        "GA": 2,
+        "GF": 1,
+        "GA": 3,
         "GD": -2,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "B": [
