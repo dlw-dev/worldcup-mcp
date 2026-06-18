@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-17T23:01:27.469Z",
+  "updated_at": "2026-06-18T01:36:55.219Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 25
+    "live_overlay": 27
   },
   "matches": [
     {
@@ -1162,9 +1162,9 @@
       "team2": "Panama",
       "venue": "Toronto",
       "city": "Toronto",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 1,
+      "score2": 0
     },
     {
       "id": "m069",
@@ -2374,24 +2374,24 @@
       },
       {
         "team": "Ghana",
-        "P": 0,
-        "W": 0,
+        "P": 1,
+        "W": 1,
         "D": 0,
         "L": 0,
-        "GF": 0,
+        "GF": 1,
         "GA": 0,
-        "GD": 0,
-        "Pts": 0
+        "GD": 1,
+        "Pts": 3
       },
       {
         "team": "Panama",
-        "P": 0,
+        "P": 1,
         "W": 0,
         "D": 0,
-        "L": 0,
+        "L": 1,
         "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "GA": 1,
+        "GD": -1,
         "Pts": 0
       },
       {
