@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-19T20:48:51.201Z",
+  "updated_at": "2026-06-19T21:55:14.864Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -363,9 +363,9 @@
       "team2": "Australia",
       "venue": "Seattle",
       "city": "Seattle",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 0
     },
     {
       "id": "m022",
@@ -1995,24 +1995,24 @@
     "D": [
       {
         "team": "USA",
-        "P": 1,
-        "W": 1,
+        "P": 2,
+        "W": 2,
         "D": 0,
         "L": 0,
-        "GF": 4,
+        "GF": 6,
         "GA": 1,
-        "GD": 3,
-        "Pts": 3
+        "GD": 5,
+        "Pts": 6
       },
       {
         "team": "Australia",
-        "P": 1,
+        "P": 2,
         "W": 1,
         "D": 0,
-        "L": 0,
+        "L": 1,
         "GF": 2,
-        "GA": 0,
-        "GD": 2,
+        "GA": 2,
+        "GD": 0,
         "Pts": 3
       },
       {
