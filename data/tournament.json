@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-18T23:23:32.940Z",
+  "updated_at": "2026-06-19T02:16:00.999Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -176,10 +176,9 @@
       "team2": "Qatar",
       "venue": "Vancouver",
       "city": "Vancouver",
-      "status": "live",
-      "score1": 3,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 6,
+      "score2": 0
     },
     {
       "id": "m011",
@@ -1903,6 +1902,17 @@
     ],
     "B": [
       {
+        "team": "Canada",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 7,
+        "GA": 1,
+        "GD": 6,
+        "Pts": 4
+      },
+      {
         "team": "Switzerland",
         "P": 2,
         "W": 1,
@@ -1914,28 +1924,6 @@
         "Pts": 4
       },
       {
-        "team": "Canada",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "team": "Qatar",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
         "team": "Bosnia & Herzegovina",
         "P": 2,
         "W": 0,
@@ -1944,6 +1932,17 @@
         "GF": 2,
         "GA": 5,
         "GD": -3,
+        "Pts": 1
+      },
+      {
+        "team": "Qatar",
+        "P": 2,
+        "W": 0,
+        "D": 1,
+        "L": 1,
+        "GF": 1,
+        "GA": 7,
+        "GD": -6,
         "Pts": 1
       }
     ],
