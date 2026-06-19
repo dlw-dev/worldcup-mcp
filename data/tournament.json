@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-19T21:55:14.864Z",
+  "updated_at": "2026-06-19T22:54:29.592Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 32
+    "live_overlay": 34
   },
   "matches": [
     {
@@ -261,9 +261,10 @@
       "team2": "Morocco",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 1,
+      "minute": null
     },
     {
       "id": "m016",
