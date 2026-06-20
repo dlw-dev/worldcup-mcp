@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-20T16:04:37.597Z",
+  "updated_at": "2026-06-20T17:43:11.652Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 34
+    "live_overlay": 36
   },
   "matches": [
     {
@@ -567,9 +567,10 @@
       "team2": "Sweden",
       "venue": "Houston",
       "city": "Houston",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 2,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m034",
