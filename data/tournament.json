@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-20T04:39:06.514Z",
+  "updated_at": "2026-06-20T08:05:51.501Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -380,9 +380,9 @@
       "team2": "Paraguay",
       "venue": "San Francisco Bay Area (Santa Clara)",
       "city": "San Francisco Bay Area (Santa Clara)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 0,
+      "score2": 1
     },
     {
       "id": "m023",
@@ -2016,24 +2016,24 @@
         "Pts": 3
       },
       {
-        "team": "Turkey",
-        "P": 1,
-        "W": 0,
+        "team": "Paraguay",
+        "P": 2,
+        "W": 1,
         "D": 0,
         "L": 1,
-        "GF": 0,
-        "GA": 2,
+        "GF": 2,
+        "GA": 4,
         "GD": -2,
-        "Pts": 0
+        "Pts": 3
       },
       {
-        "team": "Paraguay",
-        "P": 1,
+        "team": "Turkey",
+        "P": 2,
         "W": 0,
         "D": 0,
-        "L": 1,
-        "GF": 1,
-        "GA": 4,
+        "L": 2,
+        "GF": 0,
+        "GA": 3,
         "GD": -3,
         "Pts": 0
       }
