@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-20T17:43:11.652Z",
+  "updated_at": "2026-06-20T19:01:20.110Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -568,8 +568,8 @@
       "venue": "Houston",
       "city": "Houston",
       "status": "live",
-      "score1": 2,
-      "score2": 0,
+      "score1": 5,
+      "score2": 1,
       "minute": null
     },
     {
