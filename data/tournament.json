@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-20T20:38:50.515Z",
+  "updated_at": "2026-06-20T21:51:57.928Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -466,7 +466,7 @@
       "venue": "Toronto",
       "city": "Toronto",
       "status": "live",
-      "score1": 0,
+      "score1": 1,
       "score2": 1,
       "minute": null
     },
