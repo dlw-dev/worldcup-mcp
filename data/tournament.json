@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-21T20:45:19.388Z",
+  "updated_at": "2026-06-21T22:03:52.390Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 42
+    "live_overlay": 43
   },
   "matches": [
     {
@@ -669,10 +669,9 @@
       "team2": "Iran",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "live",
+      "status": "finished",
       "score1": 0,
-      "score2": 0,
-      "minute": null
+      "score2": 0
     },
     {
       "id": "m040",
@@ -789,9 +788,10 @@
       "team2": "Cape Verde",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": "3'"
     },
     {
       "id": "m047",
@@ -2134,14 +2134,25 @@
     "G": [
       {
         "team": "Iran",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
         "GF": 2,
         "GA": 2,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
+      },
+      {
+        "team": "Belgium",
+        "P": 2,
+        "W": 0,
+        "D": 2,
+        "L": 0,
+        "GF": 1,
+        "GA": 1,
+        "GD": 0,
+        "Pts": 2
       },
       {
         "team": "New Zealand",
@@ -2151,17 +2162,6 @@
         "L": 0,
         "GF": 2,
         "GA": 2,
-        "GD": 0,
-        "Pts": 1
-      },
-      {
-        "team": "Belgium",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
         "GD": 0,
         "Pts": 1
       },
