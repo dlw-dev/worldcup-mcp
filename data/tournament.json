@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-21T17:49:48.532Z",
+  "updated_at": "2026-06-21T19:07:14.997Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 40
+    "live_overlay": 42
   },
   "matches": [
     {
@@ -669,9 +669,10 @@
       "team2": "Iran",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m040",
@@ -771,10 +772,9 @@
       "team2": "Saudi Arabia",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "live",
-      "score1": 4,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 5,
+      "score2": 0
     },
     {
       "id": "m046",
@@ -2179,15 +2179,15 @@
     ],
     "H": [
       {
-        "team": "Saudi Arabia",
-        "P": 1,
-        "W": 0,
+        "team": "Spain",
+        "P": 2,
+        "W": 1,
         "D": 1,
         "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
+        "GF": 5,
+        "GA": 0,
+        "GD": 5,
+        "Pts": 4
       },
       {
         "team": "Uruguay",
@@ -2201,7 +2201,7 @@
         "Pts": 1
       },
       {
-        "team": "Spain",
+        "team": "Cape Verde",
         "P": 1,
         "W": 0,
         "D": 1,
@@ -2212,14 +2212,14 @@
         "Pts": 1
       },
       {
-        "team": "Cape Verde",
-        "P": 1,
+        "team": "Saudi Arabia",
+        "P": 2,
         "W": 0,
         "D": 1,
-        "L": 0,
-        "GF": 0,
-        "GA": 0,
-        "GD": 0,
+        "L": 1,
+        "GF": 1,
+        "GA": 6,
+        "GD": -5,
         "Pts": 1
       }
     ],
