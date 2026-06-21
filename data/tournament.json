@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-21T00:19:39.977Z",
+  "updated_at": "2026-06-21T05:22:22.704Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -482,9 +482,9 @@
       "team2": "Curaçao",
       "venue": "Kansas City",
       "city": "Kansas City",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 0,
+      "score2": 0
     },
     {
       "id": "m029",
@@ -2063,25 +2063,25 @@
       },
       {
         "team": "Ecuador",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 0,
         "GA": 1,
         "GD": -1,
-        "Pts": 0
+        "Pts": 1
       },
       {
         "team": "Curaçao",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 0,
+        "D": 1,
         "L": 1,
         "GF": 1,
         "GA": 7,
         "GD": -6,
-        "Pts": 0
+        "Pts": 1
       }
     ],
     "F": [
