@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-22T13:20:19.191Z",
+  "updated_at": "2026-06-22T18:02:40.275Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 43
+    "live_overlay": 45
   },
   "matches": [
     {
@@ -975,9 +975,10 @@
       "team2": "Austria",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m058",
