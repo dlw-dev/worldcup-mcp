@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-21T23:41:16.985Z",
+  "updated_at": "2026-06-22T02:10:30.241Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -788,10 +788,9 @@
       "team2": "Cape Verde",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "live",
+      "status": "finished",
       "score1": 2,
-      "score2": 2,
-      "minute": "75'"
+      "score2": 2
     },
     {
       "id": "m047",
@@ -2191,25 +2190,25 @@
       },
       {
         "team": "Uruguay",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
-        "GF": 1,
-        "GA": 1,
+        "GF": 3,
+        "GA": 3,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
       },
       {
         "team": "Cape Verde",
-        "P": 1,
+        "P": 2,
         "W": 0,
-        "D": 1,
+        "D": 2,
         "L": 0,
-        "GF": 0,
-        "GA": 0,
+        "GF": 2,
+        "GA": 2,
         "GD": 0,
-        "Pts": 1
+        "Pts": 2
       },
       {
         "team": "Saudi Arabia",
