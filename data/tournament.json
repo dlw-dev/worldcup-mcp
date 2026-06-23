@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-23T18:29:20.976Z",
+  "updated_at": "2026-06-23T20:35:56.269Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 49
+    "live_overlay": 51
   },
   "matches": [
     {
@@ -1077,10 +1077,9 @@
       "team2": "Uzbekistan",
       "venue": "Houston",
       "city": "Houston",
-      "status": "live",
-      "score1": 3,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 5,
+      "score2": 0
     },
     {
       "id": "m064",
@@ -1180,9 +1179,10 @@
       "team2": "Ghana",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m070",
@@ -2317,6 +2317,17 @@
     ],
     "K": [
       {
+        "team": "Portugal",
+        "P": 2,
+        "W": 1,
+        "D": 1,
+        "L": 0,
+        "GF": 6,
+        "GA": 1,
+        "GD": 5,
+        "Pts": 4
+      },
+      {
         "team": "Colombia",
         "P": 1,
         "W": 1,
@@ -2326,17 +2337,6 @@
         "GA": 1,
         "GD": 2,
         "Pts": 3
-      },
-      {
-        "team": "Portugal",
-        "P": 1,
-        "W": 0,
-        "D": 1,
-        "L": 0,
-        "GF": 1,
-        "GA": 1,
-        "GD": 0,
-        "Pts": 1
       },
       {
         "team": "DR Congo",
@@ -2351,13 +2351,13 @@
       },
       {
         "team": "Uzbekistan",
-        "P": 1,
+        "P": 2,
         "W": 0,
         "D": 0,
-        "L": 1,
+        "L": 2,
         "GF": 1,
-        "GA": 3,
-        "GD": -2,
+        "GA": 8,
+        "GD": -7,
         "Pts": 0
       }
     ],
