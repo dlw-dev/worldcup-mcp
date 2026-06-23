@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-23T16:37:59.289Z",
+  "updated_at": "2026-06-23T18:29:20.976Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 47
+    "live_overlay": 49
   },
   "matches": [
     {
@@ -1077,9 +1077,10 @@
       "team2": "Uzbekistan",
       "venue": "Houston",
       "city": "Houston",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 3,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m064",
