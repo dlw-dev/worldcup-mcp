@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-24T21:13:28.284Z",
+  "updated_at": "2026-06-24T22:41:04.997Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 57
+    "live_overlay": 61
   },
   "matches": [
     {
@@ -295,9 +295,10 @@
       "team2": "Brazil",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 2,
+      "minute": null
     },
     {
       "id": "m018",
@@ -312,9 +313,10 @@
       "team2": "Haiti",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 1,
+      "minute": null
     },
     {
       "id": "m019",
