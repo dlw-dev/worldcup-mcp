@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-24T17:52:02.644Z",
+  "updated_at": "2026-06-24T19:42:51.255Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 53
+    "live_overlay": 57
   },
   "matches": [
     {
@@ -193,9 +193,10 @@
       "team2": "Canada",
       "venue": "Vancouver",
       "city": "Vancouver",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m012",
@@ -210,9 +211,10 @@
       "team2": "Qatar",
       "venue": "Seattle",
       "city": "Seattle",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 2,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m013",
