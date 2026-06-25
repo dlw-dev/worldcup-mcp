@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-25T19:26:37.038Z",
+  "updated_at": "2026-06-25T21:12:17.049Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 61
+    "live_overlay": 63
   },
   "matches": [
     {
@@ -499,9 +499,10 @@
       "team2": "Ivory Coast",
       "venue": "Philadelphia",
       "city": "Philadelphia",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 1,
+      "minute": "51'"
     },
     {
       "id": "m030",
@@ -516,9 +517,10 @@
       "team2": "Germany",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 1,
+      "minute": "52'"
     },
     {
       "id": "m031",
