@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-26T17:21:56.805Z",
+  "updated_at": "2026-06-26T19:17:45.497Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 69
+    "live_overlay": 73
   },
   "matches": [
     {
@@ -907,9 +907,10 @@
       "team2": "France",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 1,
+      "minute": null
     },
     {
       "id": "m054",
@@ -924,9 +925,10 @@
       "team2": "Iraq",
       "venue": "Toronto",
       "city": "Toronto",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m055",
