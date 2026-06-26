@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-25T22:49:36.810Z",
+  "updated_at": "2026-06-26T00:00:57.042Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 65
+    "live_overlay": 69
   },
   "matches": [
     {
@@ -601,9 +601,10 @@
       "team2": "Sweden",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m036",
@@ -618,9 +619,10 @@
       "team2": "Netherlands",
       "venue": "Kansas City",
       "city": "Kansas City",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 2,
+      "minute": null
     },
     {
       "id": "m037",
