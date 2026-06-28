@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-28T18:43:06.127Z",
+  "updated_at": "2026-06-28T20:01:01.908Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 79
+    "live_overlay": 81
   },
   "matches": [
     {
@@ -1247,9 +1247,10 @@
       "team2": "Canada",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m074",
