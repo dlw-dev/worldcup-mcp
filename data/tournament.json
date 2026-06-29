@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-29T11:49:35.929Z",
+  "updated_at": "2026-06-29T15:20:50.973Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1532,7 +1532,7 @@
       "date": "2026-07-04",
       "time_local": "12:00 UTC-5",
       "kickoff_utc": "2026-07-04T17:00:00.000Z",
-      "team1": "W73",
+      "team1": "Canada",
       "team2": "W75",
       "venue": "Houston",
       "city": "Houston",
