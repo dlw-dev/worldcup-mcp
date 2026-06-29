@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-29T17:57:33.140Z",
+  "updated_at": "2026-06-29T20:03:08.619Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1298,10 +1298,9 @@
       "team2": "Japan",
       "venue": "Houston",
       "city": "Houston",
-      "status": "live",
-      "score1": 0,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 1
     },
     {
       "id": "m077",
