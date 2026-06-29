@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-29T22:44:46.439Z",
+  "updated_at": "2026-06-29T23:44:23.332Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1264,10 +1264,9 @@
       "team2": "Paraguay",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
-      "status": "live",
-      "score1": 1,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 5,
+      "score2": 6
     },
     {
       "id": "m075",
