@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-30T16:56:27.030Z",
+  "updated_at": "2026-06-30T18:56:25.490Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 85
+    "live_overlay": 87
   },
   "matches": [
     {
@@ -1332,9 +1332,10 @@
       "team2": "Norway",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 2,
+      "minute": null
     },
     {
       "id": "m079",
