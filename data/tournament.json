@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-30T22:16:15.699Z",
+  "updated_at": "2026-06-30T23:39:14.169Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1315,10 +1315,9 @@
       "team2": "Sweden",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "live",
-      "score1": 1,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 3,
+      "score2": 0
     },
     {
       "id": "m078",
