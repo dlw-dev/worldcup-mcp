@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-06-29T23:44:23.332Z",
+  "updated_at": "2026-06-30T01:52:01.458Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1265,8 +1265,8 @@
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
       "status": "finished",
-      "score1": 5,
-      "score2": 6
+      "score1": 4,
+      "score2": 5
     },
     {
       "id": "m075",
