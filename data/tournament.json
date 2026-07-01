@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-01T18:05:10.490Z",
+  "updated_at": "2026-07-01T20:07:48.246Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 89
+    "live_overlay": 91
   },
   "matches": [
     {
@@ -1400,9 +1400,10 @@
       "team2": "Senegal",
       "venue": "Seattle",
       "city": "Seattle",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m083",
