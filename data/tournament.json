@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-01T15:59:00.080Z",
+  "updated_at": "2026-07-01T18:05:10.490Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1366,9 +1366,9 @@
       "team2": "DR Congo",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 1
     },
     {
       "id": "m081",
