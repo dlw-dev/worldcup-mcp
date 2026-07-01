@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-01T06:25:57.344Z",
+  "updated_at": "2026-07-01T10:29:48.815Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1349,9 +1349,9 @@
       "team2": "Ecuador",
       "venue": "Mexico City",
       "city": "Mexico City",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 0
     },
     {
       "id": "m080",
@@ -1515,8 +1515,8 @@
       "date": "2026-07-04",
       "time_local": "17:00 UTC-4",
       "kickoff_utc": "2026-07-04T21:00:00.000Z",
-      "team1": "W74",
-      "team2": "W77",
+      "team1": "Paraguay",
+      "team2": "France",
       "venue": "Philadelphia",
       "city": "Philadelphia",
       "status": "scheduled",
@@ -1533,7 +1533,7 @@
       "time_local": "12:00 UTC-5",
       "kickoff_utc": "2026-07-04T17:00:00.000Z",
       "team1": "Canada",
-      "team2": "W75",
+      "team2": "Morocco",
       "venue": "Houston",
       "city": "Houston",
       "status": "scheduled",
@@ -1549,8 +1549,8 @@
       "date": "2026-07-05",
       "time_local": "16:00 UTC-4",
       "kickoff_utc": "2026-07-05T20:00:00.000Z",
-      "team1": "W76",
-      "team2": "W78",
+      "team1": "Brazil",
+      "team2": "Norway",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
       "status": "scheduled",
