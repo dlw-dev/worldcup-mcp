@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-02T18:16:17.382Z",
+  "updated_at": "2026-07-02T19:55:36.910Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 91
+    "live_overlay": 93
   },
   "matches": [
     {
@@ -1434,9 +1434,10 @@
       "team2": "Austria",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 1,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m085",
