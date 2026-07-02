@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-02T04:18:03.892Z",
+  "updated_at": "2026-07-02T07:47:34.376Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1567,7 +1567,7 @@
       "time_local": "18:00 UTC-6",
       "kickoff_utc": "2026-07-06T00:00:00.000Z",
       "team1": "Mexico",
-      "team2": "W80",
+      "team2": "England",
       "venue": "Mexico City",
       "city": "Mexico City",
       "status": "scheduled",
@@ -1600,8 +1600,8 @@
       "date": "2026-07-06",
       "time_local": "17:00 UTC-7",
       "kickoff_utc": "2026-07-07T00:00:00.000Z",
-      "team1": "W81",
-      "team2": "W82",
+      "team1": "USA",
+      "team2": "Belgium",
       "venue": "Seattle",
       "city": "Seattle",
       "status": "scheduled",
