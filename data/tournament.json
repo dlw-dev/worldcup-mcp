@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-03T13:05:45.036Z",
+  "updated_at": "2026-07-03T15:22:33.447Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1583,8 +1583,8 @@
       "date": "2026-07-06",
       "time_local": "14:00 UTC-5",
       "kickoff_utc": "2026-07-06T19:00:00.000Z",
-      "team1": "W83",
-      "team2": "W84",
+      "team1": "Portugal",
+      "team2": "Spain",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
       "status": "scheduled",
@@ -1634,7 +1634,7 @@
       "date": "2026-07-07",
       "time_local": "13:00 UTC-7",
       "kickoff_utc": "2026-07-07T20:00:00.000Z",
-      "team1": "W85",
+      "team1": "Switzerland",
       "team2": "W87",
       "venue": "Vancouver",
       "city": "Vancouver",
