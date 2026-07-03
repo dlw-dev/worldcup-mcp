@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-03T01:14:03.287Z",
+  "updated_at": "2026-07-03T05:00:10.898Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1417,10 +1417,9 @@
       "team2": "Croatia",
       "venue": "Toronto",
       "city": "Toronto",
-      "status": "live",
+      "status": "finished",
       "score1": 2,
-      "score2": 2,
-      "minute": null
+      "score2": 1
     },
     {
       "id": "m084",
