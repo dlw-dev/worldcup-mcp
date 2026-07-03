@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-03T19:52:25.149Z",
+  "updated_at": "2026-07-03T21:02:01.969Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1502,10 +1502,9 @@
       "team2": "Egypt",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
-      "status": "live",
-      "score1": 1,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 3,
+      "score2": 5
     },
     {
       "id": "m089",
