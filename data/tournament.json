@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-04T22:08:33.449Z",
+  "updated_at": "2026-07-04T23:11:28.828Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1519,10 +1519,9 @@
       "team2": "France",
       "venue": "Philadelphia",
       "city": "Philadelphia",
-      "status": "live",
+      "status": "finished",
       "score1": 0,
-      "score2": 0,
-      "minute": null
+      "score2": 1
     },
     {
       "id": "m090",
