@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-04T18:43:36.531Z",
+  "updated_at": "2026-07-04T19:57:51.787Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1536,10 +1536,9 @@
       "team2": "Morocco",
       "venue": "Houston",
       "city": "Houston",
-      "status": "live",
+      "status": "finished",
       "score1": 0,
-      "score2": 1,
-      "minute": null
+      "score2": 3
     },
     {
       "id": "m091",
