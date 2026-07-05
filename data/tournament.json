@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-05T18:13:38.884Z",
+  "updated_at": "2026-07-05T19:45:14.911Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1651,8 +1651,8 @@
       "date": "2026-07-09",
       "time_local": "16:00 UTC-4",
       "kickoff_utc": "2026-07-09T20:00:00.000Z",
-      "team1": "W89",
-      "team2": "W90",
+      "team1": "France",
+      "team2": "Morocco",
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
       "status": "scheduled",
