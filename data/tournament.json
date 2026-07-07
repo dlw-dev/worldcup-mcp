@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-07T08:52:22.104Z",
+  "updated_at": "2026-07-07T11:46:12.261Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1668,8 +1668,8 @@
       "date": "2026-07-10",
       "time_local": "12:00 UTC-7",
       "kickoff_utc": "2026-07-10T19:00:00.000Z",
-      "team1": "W93",
-      "team2": "W94",
+      "team1": "Spain",
+      "team2": "Belgium",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
       "status": "scheduled",
