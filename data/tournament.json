@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-07T21:55:35.929Z",
+  "updated_at": "2026-07-07T22:59:41.322Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1638,10 +1638,9 @@
       "team2": "Colombia",
       "venue": "Vancouver",
       "city": "Vancouver",
-      "status": "live",
-      "score1": 0,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 4,
+      "score2": 3
     },
     {
       "id": "m097",
