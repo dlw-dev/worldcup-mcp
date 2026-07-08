@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-08T10:51:21.266Z",
+  "updated_at": "2026-07-08T12:18:26.456Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1702,8 +1702,8 @@
       "date": "2026-07-11",
       "time_local": "20:00 UTC-5",
       "kickoff_utc": "2026-07-12T01:00:00.000Z",
-      "team1": "W95",
-      "team2": "W96",
+      "team1": "Argentina",
+      "team2": "Switzerland",
       "venue": "Kansas City",
       "city": "Kansas City",
       "status": "scheduled",
