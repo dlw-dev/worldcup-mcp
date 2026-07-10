@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-10T20:41:34.520Z",
+  "updated_at": "2026-07-10T21:43:53.071Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1672,10 +1672,9 @@
       "team2": "Belgium",
       "venue": "Los Angeles (Inglewood)",
       "city": "Los Angeles (Inglewood)",
-      "status": "live",
-      "score1": 1,
-      "score2": 1,
-      "minute": null
+      "status": "finished",
+      "score1": 2,
+      "score2": 1
     },
     {
       "id": "m099",
