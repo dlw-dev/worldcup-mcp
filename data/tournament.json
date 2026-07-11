@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-11T13:50:36.418Z",
+  "updated_at": "2026-07-11T14:50:09.062Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1719,8 +1719,8 @@
       "date": "2026-07-14",
       "time_local": "14:00 UTC-5",
       "kickoff_utc": "2026-07-14T19:00:00.000Z",
-      "team1": "W97",
-      "team2": "W98",
+      "team1": "France",
+      "team2": "Spain",
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
       "status": "scheduled",
