@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-12T14:17:32.218Z",
+  "updated_at": "2026-07-12T15:28:36.517Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1736,8 +1736,8 @@
       "date": "2026-07-15",
       "time_local": "15:00 UTC-4",
       "kickoff_utc": "2026-07-15T19:00:00.000Z",
-      "team1": "W99",
-      "team2": "W100",
+      "team1": "England",
+      "team2": "Argentina",
       "venue": "Atlanta",
       "city": "Atlanta",
       "status": "scheduled",
