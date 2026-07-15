@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-15T17:57:59.213Z",
+  "updated_at": "2026-07-15T19:18:26.153Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 117
+    "live_overlay": 118
   },
   "matches": [
     {
@@ -1740,9 +1740,10 @@
       "team2": "Argentina",
       "venue": "Atlanta",
       "city": "Atlanta",
-      "status": "scheduled",
-      "score1": null,
-      "score2": null
+      "status": "live",
+      "score1": 0,
+      "score2": 0,
+      "minute": null
     },
     {
       "id": "m103",
