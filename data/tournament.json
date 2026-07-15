@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-15T08:03:44.826Z",
+  "updated_at": "2026-07-15T10:13:21.923Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1753,7 +1753,7 @@
       "date": "2026-07-18",
       "time_local": "17:00 UTC-4",
       "kickoff_utc": "2026-07-18T21:00:00.000Z",
-      "team1": "L101",
+      "team1": "France",
       "team2": "L102",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
@@ -1770,7 +1770,7 @@
       "date": "2026-07-19",
       "time_local": "15:00 UTC-4",
       "kickoff_utc": "2026-07-19T19:00:00.000Z",
-      "team1": "W101",
+      "team1": "Spain",
       "team2": "W102",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
