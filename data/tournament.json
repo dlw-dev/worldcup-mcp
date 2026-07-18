@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-18T22:26:33.030Z",
+  "updated_at": "2026-07-18T23:26:31.899Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1757,10 +1757,9 @@
       "team2": "England",
       "venue": "Miami (Miami Gardens)",
       "city": "Miami (Miami Gardens)",
-      "status": "live",
-      "score1": 2,
-      "score2": 4,
-      "minute": null
+      "status": "finished",
+      "score1": 4,
+      "score2": 6
     },
     {
       "id": "m104",
