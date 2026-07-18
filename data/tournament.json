@@ -1,13 +1,13 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-18T20:32:29.232Z",
+  "updated_at": "2026-07-18T21:30:02.354Z",
   "counts": {
     "matches": 104,
     "teams": 48,
     "groups": 12,
     "venues": 16,
-    "live_overlay": 118
+    "live_overlay": 60
   },
   "matches": [
     {
@@ -1265,8 +1265,8 @@
       "venue": "Boston (Foxborough)",
       "city": "Boston (Foxborough)",
       "status": "finished",
-      "score1": 4,
-      "score2": 5
+      "score1": 1,
+      "score2": 1
     },
     {
       "id": "m075",
@@ -1503,8 +1503,8 @@
       "venue": "Dallas (Arlington)",
       "city": "Dallas (Arlington)",
       "status": "finished",
-      "score1": 3,
-      "score2": 5
+      "score1": 1,
+      "score2": 1
     },
     {
       "id": "m089",
@@ -1639,8 +1639,8 @@
       "venue": "Vancouver",
       "city": "Vancouver",
       "status": "finished",
-      "score1": 4,
-      "score2": 3
+      "score1": 0,
+      "score2": 0
     },
     {
       "id": "m097",
