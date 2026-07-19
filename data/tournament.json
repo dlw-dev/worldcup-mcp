@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-07-19T21:29:55.142Z",
+  "updated_at": "2026-07-19T22:27:45.422Z",
   "counts": {
     "matches": 104,
     "teams": 48,
@@ -1774,10 +1774,9 @@
       "team2": "Argentina",
       "venue": "New York/New Jersey (East Rutherford)",
       "city": "New York/New Jersey (East Rutherford)",
-      "status": "live",
-      "score1": 0,
-      "score2": 0,
-      "minute": null
+      "status": "finished",
+      "score1": 1,
+      "score2": 0
     }
   ],
   "groups": {
