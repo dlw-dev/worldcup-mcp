@@ -1,7 +1,7 @@
 {
   "name": "World Cup 2026",
   "source": "openfootball/worldcup.json + football-data.org",
-  "updated_at": "2026-08-10T22:07:21.550Z",
+  "updated_at": "2026-08-10T22:53:57.119Z",
   "counts": {
     "matches": 104,
     "teams": 48,
